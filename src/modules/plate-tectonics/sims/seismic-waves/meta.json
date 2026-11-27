@@ -1,0 +1,14 @@
+{
+  "id": "seismic-waves",
+  "kind": "sim",
+  "title": "Seismic waves through the Earth",
+  "description": "Pick an epicentre and watch P- and S-waves travel through a cross-section of the Earth. See where S-waves stop and where the shadow zones form.",
+  "tags": ["seismic waves", "P-wave", "S-wave", "shadow zone", "outer core", "inner core", "Earth's interior"],
+  "simplifications": [
+    "Waves are traced through a simplified, spherically symmetric version of the PREM Earth model (speeds accurate to a few percent). Real Earth varies from place to place.",
+    "Only direct, transmitted rays are shown. Reflections, P↔S conversions, surface waves and diffracted waves are left out.",
+    "The crust (about 6–70 km thick) is far too thin to see at this scale, and the source is 33 km deep.",
+    "Time is sped up: at 1×, about 30 seconds of Earth time pass per real second.",
+    "The shadow-zone limits come from ray theory (P ≈ 98°–145° in this model). Weak diffracted P waves reach out to about 104°, which is why textbooks quote 104°–140°."
+  ]
+}

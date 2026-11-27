@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" role="img" aria-labelledby="ms-t ms-d">
+  <title id="ms-t">Magnetic stripes on the sea floor</title>
+  <desc id="ms-d">Schematic map-view of the sea floor either side of a mid-ocean ridge. Bands of new crust alternate between normal and reversed magnetic polarity and are mirror images across the ridge, with age increasing away from the ridge. A magnetometer profile above shows matching peaks and dips.</desc>
+  <!-- profile -->
+  <path d="M30 70 H750" class="dg-thin dg-dash"/>
+  <path class="dg-line" style="stroke-width:2.5" d="M30 50 H60 V90 H110 V50 H170 V90 H250 V50 H330 V90 H360 V50 H420 V90 H450 V50 H530 V90 H610 V50 H670 V90 H720 V50 H750"/>
+  <text x="30" y="30" class="dg-small dg-bold">Magnetometer reading towing across the ridge</text>
+  <text x="755" y="48" class="dg-small" text-anchor="end">stronger than expected</text>
+  <text x="755" y="106" class="dg-small" text-anchor="end">weaker than expected</text>
+  <!-- stripes: centre 390; widths symmetrical -->
+  <g>
+    <!-- right side -->
+    <rect x="390" y="130" width="30" height="130" class="dg-sa"/>
+    <rect x="420" y="130" width="30" height="130" class="dg-sb"/>
+    <rect x="450" y="130" width="80" height="130" class="dg-sa"/>
+    <rect x="530" y="130" width="80" height="130" class="dg-sb"/>
+    <rect x="610" y="130" width="60" height="130" class="dg-sa"/>
+    <rect x="670" y="130" width="50" height="130" class="dg-sb"/>
+    <rect x="720" y="130" width="30" height="130" class="dg-sa"/>
+    <!-- left side (mirror) -->
+    <rect x="360" y="130" width="30" height="130" class="dg-sa"/>
+    <rect x="330" y="130" width="30" height="130" class="dg-sb"/>
+    <rect x="250" y="130" width="80" height="130" class="dg-sa"/>
+    <rect x="170" y="130" width="80" height="130" class="dg-sb"/>
+    <rect x="110" y="130" width="60" height="130" class="dg-sa"/>
+    <rect x="60" y="130" width="50" height="130" class="dg-sb"/>
+    <rect x="30" y="130" width="30" height="130" class="dg-sa"/>
+  </g>
+  <rect x="386" y="126" width="8" height="138" class="dg-magma"/>
+  <g class="dg-small">
+    <text x="390" y="122" text-anchor="middle" class="dg-bold">Ridge axis</text>
+    <text x="210" y="285" text-anchor="middle">← older crust</text>
+    <text x="570" y="285" text-anchor="middle">older crust →</text>
+    <text x="390" y="285" text-anchor="middle">youngest</text>
+  </g>
+  <g transform="translate(30,303)">
+    <rect width="14" height="14" class="dg-sa"/><text x="22" y="12" class="dg-small">Normal polarity (field like today's)</text>
+    <rect x="270" width="14" height="14" class="dg-sb"/><text x="292" y="12" class="dg-small">Reversed polarity</text>
+    <text x="470" y="12" class="dg-small dg-muted">Widths are schematic; real reversals are irregular.</text>
+  </g>
+</svg>

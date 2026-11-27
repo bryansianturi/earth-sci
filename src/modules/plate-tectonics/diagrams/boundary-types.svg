@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 290" role="img" aria-labelledby="bt-t bt-d">
+  <title id="bt-t">The three plate boundary types</title>
+  <desc id="bt-d">Three panels. Divergent: plates move apart and magma rises. Convergent: one plate sinks beneath another. Transform: plates slide past each other horizontally.</desc>
+  <!-- Panel 1: divergent -->
+  <g transform="translate(0,0)">
+    <rect x="10" y="40" width="240" height="190" rx="6" class="dg-asth"/>
+    <path d="M10 40 H108 L120 62 H140 L152 40 H250 V76 H152 L140 70 H120 L108 76 H10Z" class="dg-lith"/>
+    <path d="M120 62 L130 150 L140 62Z" class="dg-magma"/>
+    <ellipse cx="130" cy="160" rx="30" ry="14" class="dg-magma"/>
+    <path d="M100 52 H40" class="dg-line" marker-end="url(#ah)" style="stroke-width:3"/>
+    <path d="M160 52 H220" class="dg-line" marker-end="url(#ah)" style="stroke-width:3"/>
+    <text x="130" y="22" text-anchor="middle" class="dg-text dg-bold">Divergent</text>
+    <text x="130" y="250" text-anchor="middle" class="dg-small">Plates move apart.</text>
+    <text x="130" y="268" text-anchor="middle" class="dg-small">New crust forms (ridge, rift).</text>
+  </g>
+  <!-- Panel 2: convergent -->
+  <g transform="translate(260,0)">
+    <rect x="10" y="40" width="240" height="190" rx="6" class="dg-asth"/>
+    <path d="M10 56 H110 L226 150 L220 164 L100 70 H10Z" class="dg-lith"/>
+    <path d="M110 56 L125 40 H250 V80 H138Z" class="dg-lith"/>
+    <path d="M10 40 H108 L125 40 L110 56 H10Z" class="dg-water"/>
+    <path d="M190 40 L196 22 L202 40Z" class="dg-magma"/>
+    <path d="M40 48 H88" class="dg-line" marker-end="url(#ah)" style="stroke-width:3"/>
+    <path d="M232 60 H192" class="dg-line" marker-end="url(#ah)" style="stroke-width:3"/>
+    <circle cx="150" cy="104" r="4" class="dg-quake"/><circle cx="175" cy="124" r="4" class="dg-quake"/><circle cx="200" cy="146" r="4" class="dg-quake"/>
+    <text x="130" y="22" text-anchor="middle" class="dg-text dg-bold">Convergent</text>
+    <text x="130" y="250" text-anchor="middle" class="dg-small">Plates move together; one sinks.</text>
+    <text x="130" y="268" text-anchor="middle" class="dg-small">Trench, volcanoes, mountains, quakes.</text>
+  </g>
+  <!-- Panel 3: transform (map view) -->
+  <g transform="translate(520,0)">
+    <rect x="10" y="40" width="240" height="190" rx="6" class="dg-ocrust"/>
+    <rect x="10" y="40" width="240" height="94" class="dg-lith"/>
+    <path d="M10 134 H250" class="dg-line" style="stroke:#1d2327;stroke-width:4"/>
+    <path d="M40 100 H110" class="dg-line" marker-end="url(#ah)" style="stroke-width:3"/>
+    <path d="M220 170 H150" class="dg-line" marker-end="url(#ah)" style="stroke-width:3"/>
+    <circle cx="80" cy="134" r="4" class="dg-quake"/><circle cx="150" cy="134" r="4" class="dg-quake"/><circle cx="200" cy="134" r="4" class="dg-quake"/>
+    <text x="130" y="22" text-anchor="middle" class="dg-text dg-bold">Transform</text>
+    <text x="130" y="250" text-anchor="middle" class="dg-small">Plates slide past (map view).</text>
+    <text x="130" y="268" text-anchor="middle" class="dg-small">Crust is neither made nor destroyed.</text>
+  </g>
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" class="dg-arrow"/></marker></defs>
+</svg>

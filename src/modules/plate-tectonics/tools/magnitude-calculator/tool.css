@@ -1,0 +1,24 @@
+.mc { padding: 1rem 1.1rem 1.2rem; }
+.mc h3 { margin: 0 0 .2rem; font-size: 1.05rem; }
+.mc .mc-sub { margin: 0 0 1rem; color: var(--text-muted); font-size: .9rem; }
+.mc-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 1.4rem; }
+@media (max-width: 760px) { .mc-grid { grid-template-columns: 1fr; } }
+.mc-row { display: flex; gap: .7rem; align-items: center; flex-wrap: wrap; margin-bottom: .8rem; }
+.mc-input { width: 6rem; font-size: 1.4rem; font-weight: 700; padding: .25rem .5rem; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+.mc input[type='range'] { width: 100%; accent-color: var(--accent); }
+.mc-warn { background: var(--warm-soft); border-left: 4px solid var(--warm); padding: .5rem .8rem; border-radius: 0 8px 8px 0; font-size: .88rem; margin: .6rem 0; }
+.mc-warn[hidden] { display: none; }
+.mc dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: .35rem 1rem; }
+.mc dt { color: var(--text-muted); font-size: .88rem; }
+.mc dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+.mc dd small { font-weight: 400; color: var(--text-muted); }
+.mc h4 { margin: 1.1rem 0 .4rem; font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; color: var(--text-muted); }
+.mc ul.mc-compare { margin: 0; padding-left: 1.1rem; font-size: .93rem; }
+.mc ul.mc-compare li { margin: .25rem 0; }
+.mc-vs { background: var(--accent-soft); border-radius: 8px; padding: .7rem .9rem; margin-top: .6rem; font-size: .95rem; }
+.mc-vs .big { font-size: 1.15rem; font-weight: 700; }
+.mc table { width: 100%; border-collapse: collapse; font-size: .85rem; margin-top: .3rem; }
+.mc th, .mc td { text-align: left; padding: .3rem .4rem; border-bottom: 1px solid var(--border); }
+.mc td button { background: none; border: 1px solid var(--border); border-radius: 6px; padding: .1rem .5rem; cursor: pointer; font-size: .8rem; }
+.mc td button:hover { border-color: var(--accent); }
+.mc-note { margin-top: 1rem; font-size: .85rem; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: .7rem; }

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img" aria-labelledby="la-t la-d">
+  <title id="la-t">Lithosphere and asthenosphere</title>
+  <desc id="la-d">Vertical cross-section, depth drawn to scale (width is not): oceanic lithosphere about 100 km thick on the left, continental lithosphere about 150 km thick on the right, both sitting on the weak, slowly flowing asthenosphere.</desc>
+  <rect x="0" y="0" width="760" height="40" class="dg-sky"/>
+  <!-- asthenosphere & mantle -->
+  <rect x="0" y="40" width="760" height="320" class="dg-asth"/>
+  <!-- ocean on the left -->
+  <rect x="0" y="40" width="380" height="40" class="dg-water"/>
+  <!-- oceanic lithosphere: surface at y=80; crust 7 km ~6px; lithosphere to 100 km ~90px -->
+  <rect x="0" y="80" width="380" height="90" class="dg-lith"/>
+  <rect x="0" y="80" width="380" height="6" class="dg-ocrust"/>
+  <!-- continental lithosphere: surface at y=60 (land), crust 35 km ~32px, lithosphere 150 km ~135px -->
+  <rect x="380" y="60" width="380" height="135" class="dg-lith"/>
+  <rect x="380" y="60" width="380" height="32" class="dg-ccrust"/>
+  <path d="M380 40 L380 360" class="dg-thin dg-dash"/>
+  <path d="M0 170 H380 M380 195 H760" class="dg-line dg-dash"/>
+  <g class="dg-text">
+    <text x="14" y="62" class="dg-small">Ocean</text>
+    <text x="14" y="104" class="dg-bold dg-small" style="fill:#fff">Oceanic crust ~7 km</text>
+    <text x="14" y="124" class="dg-small" style="fill:#fff">Lithosphere ≈ 100 km</text>
+    <text x="14" y="142" class="dg-small" style="fill:#fff">(thickens as it ages and cools)</text>
+    <text x="394" y="82" class="dg-small">Continental crust ~35 km (average)</text>
+    <text x="394" y="134" class="dg-small" style="fill:#fff">Lithosphere ≈ 100–200 km</text>
+    <text x="394" y="152" class="dg-small" style="fill:#fff">Rigid: breaks, makes plates</text>
+    <text x="14" y="240" class="dg-bold">Asthenosphere</text>
+    <text x="14" y="258" class="dg-small">Hot, mostly solid rock that is weak enough</text>
+    <text x="14" y="274" class="dg-small">to flow slowly (a little melt in places).</text>
+    <text x="14" y="294" class="dg-small">Plates glide on this layer. It is NOT a liquid.</text>
+    <text x="394" y="240" class="dg-small">Deeper mantle: stronger, still slowly convecting.</text>
+  </g>
+  <g class="dg-small dg-muted"><text x="14" y="350">Depth to scale (≈ 0.9 px per km); horizontal distance is not.</text></g>
+</svg>

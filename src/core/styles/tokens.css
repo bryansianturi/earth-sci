@@ -1,0 +1,98 @@
+:root {
+  --font-ui: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-text: 'Source Serif 4 Variable', Georgia, 'Times New Roman', serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  --bg: #f6f3ec;
+  --surface: #fffdf8;
+  --surface-2: #efeadd;
+  --border: #d9d2bf;
+  --text: #1d2327;
+  --text-muted: #566069;
+  --accent: #1f6a80;
+  --accent-strong: #134a5b;
+  --accent-soft: #dcecf0;
+  --warm: #b4532a;
+  --warm-soft: #f6e3d7;
+  --focus: #e0a100;
+  --callout-bg: #f3efe2;
+
+  /* simulation palette (read by canvas code via getComputedStyle) */
+  --sim-bg: #e9f2f5;
+  --sim-sky: #dcebf1;
+  --sim-water: #8fc3d6;
+  --sim-water-deep: #5f9fb9;
+  --sim-oceanic-crust: #4a5560;
+  --sim-continental-crust: #b49a72;
+  --sim-lithosphere: #9a8470;
+  --sim-asthenosphere: #d98c4a;
+  --sim-mantle: #c4703a;
+  --sim-outer-core: #e8b53c;
+  --sim-inner-core: #f4e3a0;
+  --sim-magma: #e2461f;
+  --sim-text: #1d2327;
+  --sim-line: #1d2327;
+  --sim-stripe-a: #2d3640;
+  --sim-stripe-b: #c9c2b0;
+  --sim-p: #1f6fd1;
+  --sim-s: #c0392b;
+  --sim-quake: #ffdd33;
+  --sim-panel: rgba(255, 253, 248, 0.88);
+
+  --radius: 10px;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.06), 0 4px 14px rgb(0 0 0 / 0.06);
+  --content-w: 44rem;
+  --page-w: 76rem;
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --bg: #12171b;
+  --surface: #1a2127;
+  --surface-2: #232c33;
+  --border: #35414a;
+  --text: #e6e9eb;
+  --text-muted: #9aa7b1;
+  --accent: #6cc0d8;
+  --accent-strong: #9fd9ea;
+  --accent-soft: #1c3640;
+  --warm: #f09a6b;
+  --warm-soft: #3b2a21;
+  --focus: #ffcc33;
+  --callout-bg: #1f272d;
+
+  --sim-bg: #172229;
+  --sim-sky: #1b2b34;
+  --sim-water: #1f5370;
+  --sim-water-deep: #153b52;
+  --sim-oceanic-crust: #6b7885;
+  --sim-continental-crust: #a08a64;
+  --sim-lithosphere: #80705f;
+  --sim-asthenosphere: #b0702f;
+  --sim-mantle: #a5582b;
+  --sim-outer-core: #d9a62c;
+  --sim-inner-core: #eedc92;
+  --sim-text: #e6e9eb;
+  --sim-line: #e6e9eb;
+  --sim-stripe-a: #aeb9c4;
+  --sim-stripe-b: #3d4852;
+  --sim-p: #6aa8ff;
+  --sim-s: #ff7a69;
+  --sim-panel: rgba(26, 33, 39, 0.88);
+  color-scheme: dark;
+}
+
+/* Follow the OS only until the user picks a theme explicitly */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --bg: #12171b; --surface: #1a2127; --surface-2: #232c33; --border: #35414a;
+    --text: #e6e9eb; --text-muted: #9aa7b1; --accent: #6cc0d8; --accent-strong: #9fd9ea;
+    --accent-soft: #1c3640; --warm: #f09a6b; --warm-soft: #3b2a21; --focus: #ffcc33; --callout-bg: #1f272d;
+    --sim-bg: #172229; --sim-sky: #1b2b34; --sim-water: #1f5370; --sim-water-deep: #153b52;
+    --sim-oceanic-crust: #6b7885; --sim-continental-crust: #a08a64; --sim-lithosphere: #80705f;
+    --sim-asthenosphere: #b0702f; --sim-mantle: #a5582b; --sim-outer-core: #d9a62c; --sim-inner-core: #eedc92;
+    --sim-text: #e6e9eb; --sim-line: #e6e9eb; --sim-stripe-a: #aeb9c4; --sim-stripe-b: #3d4852;
+    --sim-p: #6aa8ff; --sim-s: #ff7a69; --sim-panel: rgba(26, 33, 39, 0.88);
+    color-scheme: dark;
+  }
+}

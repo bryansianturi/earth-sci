@@ -1,0 +1,13 @@
+{
+  "id": "plate-boundaries",
+  "kind": "sim",
+  "title": "Plate boundaries over time",
+  "description": "Choose a boundary type and drag the time slider to watch plates move and landforms appear: ridges, trenches, volcanic arcs, mountains and faults.",
+  "tags": ["plate boundaries", "divergent", "convergent", "transform", "subduction", "mid-ocean ridge", "trench", "volcanic arc", "mountains", "fault"],
+  "simplifications": [
+    "Schematic cross-sections: vertically exaggerated and not to scale. Real plates are 100–200 km thick and thousands of kilometres wide; real slabs dip at 30–90° depending on the place.",
+    "Features appear on a fixed, simplified timeline for each boundary type. Real boundaries evolve unevenly over tens of millions of years, and plates move only 2–10 cm per year.",
+    "The transform view is a map (looking down), not a cross-section. Magnetic stripes use a regular pattern; real reversals are irregular.",
+    "Continent–continent collision starts as ocean–continent subduction. Slab break-off is shown at a plausible time but is still debated for individual mountain belts."
+  ]
+}

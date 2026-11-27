@@ -1,0 +1,61 @@
+.prose { font-family: var(--font-text); font-size: 1.125rem; line-height: 1.7; }
+.prose > * { max-width: var(--content-w); }
+.prose h2 { font-family: var(--font-ui); font-size: 1.55rem; margin: 2.6rem 0 .6rem; letter-spacing: -0.01em; line-height: 1.2; }
+.prose h3 { font-family: var(--font-ui); font-size: 1.2rem; margin: 1.8rem 0 .4rem; }
+.prose p { margin: 0 0 1.1rem; }
+.prose ul, .prose ol { padding-left: 1.4rem; margin: 0 0 1.1rem; }
+.prose li { margin: .3rem 0; }
+.prose strong { font-weight: 650; }
+.prose code { font-family: var(--font-mono); font-size: .88em; background: var(--surface-2); padding: .1em .35em; border-radius: 4px; }
+.prose table { border-collapse: collapse; width: 100%; font-family: var(--font-ui); font-size: .95rem; margin: 1.2rem 0; }
+.prose th, .prose td { border: 1px solid var(--border); padding: .45rem .7rem; text-align: left; vertical-align: top; }
+.prose th { background: var(--surface-2); }
+.prose blockquote { margin: 1.4rem 0; padding: .9rem 1.2rem; border-left: 4px solid var(--accent); background: var(--callout-bg); border-radius: 0 var(--radius) var(--radius) 0; }
+.prose blockquote > :last-child { margin-bottom: 0; }
+.prose blockquote p:first-child strong:first-child { font-family: var(--font-ui); }
+.prose details { margin: 2rem 0; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.prose details > summary { cursor: pointer; font-family: var(--font-ui); font-weight: 650; padding: .8rem 1.1rem; font-size: 1.05rem; }
+.prose details[open] > summary { border-bottom: 1px solid var(--border); }
+.prose details > :not(summary) { margin-left: 1.1rem; margin-right: 1.1rem; }
+.prose details > :last-child { margin-bottom: 1rem; }
+.prose details > summary + * { margin-top: 1rem; }
+.prose .sources { font-family: var(--font-ui); font-size: .92rem; color: var(--text-muted); }
+.prose .sources ul { padding-left: 1.2rem; }
+.prose .math { font-family: var(--font-mono); background: var(--surface-2); padding: .5rem .8rem; border-radius: 8px; display: inline-block; margin: .2rem 0 1rem; font-size: .95rem; }
+
+/* ---- embeds ---- */
+.embed { margin: 2rem 0; max-width: none; }
+.prose > .embed { max-width: none; }
+.embed-diagram { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; font-family: var(--font-ui); }
+.embed-diagram svg { display: block; width: 100%; height: auto; }
+.embed-diagram figcaption { font-size: .88rem; color: var(--text-muted); margin-top: .6rem; }
+.embed-fallback { padding: 1rem; border: 1px dashed var(--border); border-radius: var(--radius); font-family: var(--font-ui); font-size: .95rem; }
+.embed-sim, .embed-tool { font-family: var(--font-ui); }
+/* wide embeds can slightly exceed the text column on large screens */
+@media (min-width: 1100px) {
+  .embed-sim, .embed-tool { margin-inline: -3rem; }
+}
+
+/* ---- shared classes for hand-drawn SVG diagrams (theme-aware) ---- */
+.dg-text { fill: var(--text); font-family: var(--font-ui); font-size: 14px; }
+.dg-small { fill: var(--text); font-family: var(--font-ui); font-size: 12px; }
+.dg-bold { font-weight: 600; }
+.dg-muted { fill: var(--text-muted); }
+.dg-line { stroke: var(--text); fill: none; stroke-width: 1.5; }
+.dg-thin { stroke: var(--text); fill: none; stroke-width: 1; opacity: .7; }
+.dg-dash { stroke-dasharray: 5 4; }
+.dg-sky { fill: var(--sim-sky); }
+.dg-water { fill: var(--sim-water); }
+.dg-mantle { fill: var(--sim-mantle); }
+.dg-asth { fill: var(--sim-asthenosphere); }
+.dg-lith { fill: var(--sim-lithosphere); }
+.dg-ocrust { fill: var(--sim-oceanic-crust); }
+.dg-ccrust { fill: var(--sim-continental-crust); }
+.dg-outer { fill: var(--sim-outer-core); }
+.dg-inner { fill: var(--sim-inner-core); }
+.dg-magma { fill: var(--sim-magma); }
+.dg-sa { fill: var(--sim-stripe-a); }
+.dg-sb { fill: var(--sim-stripe-b); }
+.dg-arrow { stroke: var(--text); fill: var(--text); }
+.dg-quake { fill: var(--sim-quake); stroke: #1d2327; stroke-width: 1.2; }
+.dg-panel { fill: var(--sim-panel); }

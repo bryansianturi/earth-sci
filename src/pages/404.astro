@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../core/layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL;
+---
+<BaseLayout title="Page not found">
+  <div class="page"><section class="hero"><h1>Page not found</h1><p>That page isn't in this encyclopedia.</p><a class="btn" href={base}>Back to home</a></section></div>
+</BaseLayout>

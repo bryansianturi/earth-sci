@@ -1,0 +1,7 @@
+{
+  "id": "magnitude-calculator",
+  "kind": "tool",
+  "title": "Earthquake magnitude calculator",
+  "description": "Convert between magnitude scales, then see the seismic moment, radiated energy, TNT equivalent and everyday comparisons. Compare two earthquakes side by side.",
+  "tags": ["magnitude", "energy", "moment", "richter", "calculator", "seismology"]
+}

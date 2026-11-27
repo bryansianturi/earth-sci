@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 340" role="img" aria-labelledby="pf-t pf-d">
+  <title id="pf-t">What pushes and pulls plates</title>
+  <desc id="pf-d">Cross-section from a mid-ocean ridge on the left to a subduction zone on the right. A thin arrow at the ridge shows ridge push, a thick arrow along the sinking slab shows slab pull, and small arrows under the plate show mantle drag.</desc>
+  <rect x="0" y="0" width="780" height="60" class="dg-sky"/>
+  <rect x="0" y="60" width="780" height="280" class="dg-asth"/>
+  <rect x="0" y="60" width="640" height="26" class="dg-water"/>
+  <!-- lithosphere: rises at ridge (left), flat, then bends and sinks -->
+  <path d="M0 76 L60 86 L560 90 Q600 92 620 104 L760 230 L735 252 L590 150 Q560 134 540 134 L60 130 Q20 128 0 120Z" class="dg-lith"/>
+  <path d="M0 76 L60 86 L560 90 Q600 92 620 104 L632 114 L560 108 L60 104 Q20 102 0 98Z" class="dg-ocrust"/>
+  <path d="M612 100 L640 58 H780 V228 L760 230 L620 104Z" class="dg-ccrust"/>
+  <text x="700" y="96" text-anchor="middle" class="dg-small">Overriding plate</text>
+  <ellipse cx="22" cy="160" rx="30" ry="16" class="dg-magma"/>
+  <!-- arrows -->
+  <path d="M40 54 H130" class="dg-line" marker-end="url(#pa)" style="stroke-width:3"/>
+  <path d="M590 140 L700 238" class="dg-line" marker-end="url(#pa)" style="stroke-width:8"/>
+  <g class="dg-line" style="stroke-width:2">
+    <path d="M200 160 H290" marker-end="url(#pa)"/><path d="M340 160 H430" marker-end="url(#pa)"/>
+  </g>
+  <g class="dg-text">
+    <text x="90" y="40" text-anchor="middle" class="dg-bold dg-small">Ridge push (small)</text>
+    <text x="696" y="190" class="dg-bold dg-small">Slab pull</text>
+    <text x="696" y="206" class="dg-small">(largest force)</text>
+    <text x="320" y="190" text-anchor="middle" class="dg-small">Mantle drag: small, can help or resist</text>
+    <text x="14" y="204" class="dg-small">Hot rock rises</text>
+    <text x="14" y="220" class="dg-small">and spreads</text>
+    <text x="330" y="118" text-anchor="middle" class="dg-small" style="fill:#fff">Cold, dense oceanic lithosphere</text>
+    <text x="320" y="316" text-anchor="middle" class="dg-small dg-muted">Schematic. Relative sizes of the forces vary from plate to plate; slab pull is generally the biggest.</text>
+  </g>
+  <defs><marker id="pa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" class="dg-arrow"/></marker></defs>
+</svg>

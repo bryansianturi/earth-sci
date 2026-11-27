@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img" aria-labelledby="el-t el-d">
+  <title id="el-t">Earth's internal layers</title>
+  <desc id="el-d">Cross-section of the Earth with radii drawn to scale: a very thin crust, a thick solid mantle, a liquid outer core and a solid inner core.</desc>
+  <circle cx="200" cy="200" r="180" class="dg-mantle"/>
+  <circle cx="200" cy="200" r="98.3" class="dg-outer"/>
+  <circle cx="200" cy="200" r="34.5" class="dg-inner"/>
+  <circle cx="200" cy="200" r="180" class="dg-line" style="stroke-width:3"/>
+  <circle cx="200" cy="200" r="98.3" class="dg-thin"/>
+  <circle cx="200" cy="200" r="34.5" class="dg-thin"/>
+  <g class="dg-thin">
+    <path d="M327 73 L420 34"/><path d="M340 170 L420 118"/><path d="M270 232 L420 210"/><path d="M205 205 L420 290"/>
+  </g>
+  <g fill="currentColor" class="dg-text"><circle cx="327" cy="73" r="3"/><circle cx="340" cy="170" r="3"/><circle cx="270" cy="232" r="3"/><circle cx="205" cy="205" r="3"/></g>
+  <g class="dg-text">
+    <text x="430" y="30" class="dg-bold">Crust</text>
+    <text x="430" y="48" class="dg-small">5–10 km thick under oceans; about 30–50 km under continents</text>
+    <text x="430" y="64" class="dg-small">(up to ~70 km). Too thin to see: it is the circle's outline.</text>
+    <text x="430" y="114" class="dg-bold">Mantle</text>
+    <text x="430" y="132" class="dg-small">About 2,890 km thick; roughly 84% of Earth's volume.</text>
+    <text x="430" y="148" class="dg-small">Solid rock that slowly flows, a few cm per year.</text>
+    <text x="430" y="206" class="dg-bold">Outer core</text>
+    <text x="430" y="224" class="dg-small">About 2,260 km thick (2,891–5,150 km deep).</text>
+    <text x="430" y="240" class="dg-small">Liquid iron–nickel alloy; its motion makes the magnetic field.</text>
+    <text x="430" y="296" class="dg-bold">Inner core</text>
+    <text x="430" y="314" class="dg-small">Radius about 1,220 km; solid iron-rich metal.</text>
+    <text x="430" y="330" class="dg-small">Solid because of the enormous pressure, despite the heat.</text>
+  </g>
+  <g class="dg-small dg-muted">
+    <text x="430" y="372">Radii drawn to scale (centre = 6,371 km depth).</text>
+  </g>
+</svg>
