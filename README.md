@@ -56,3 +56,7 @@ Scientific accuracy comes before flashiness, and every simulation lists its simp
 ## Not in Phase 1
 
 No three.js globe (a 2D cross-section teaches the seismic content better), no Tauri build (Rust is not installed here; the app is built to be wrappable, see CONTRIBUTING.md), and no ESLint/Prettier setup yet.
+
+
+
+**testing 123**
