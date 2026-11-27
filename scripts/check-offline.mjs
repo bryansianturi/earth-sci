@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const DIST = path.resolve('dist');
+const BASE = process.env.BASE_PATH ?? '/';
 const problems = [];
 
 function* walk(dir) {
@@ -52,7 +53,8 @@ for (const file of walk(DIST)) {
   for (const m of html.matchAll(/\b(?:href|src)="([^"#?]+)(?:[#?][^"]*)?"/g)) {
     const ref = m[1];
     if (/^(?:[a-z]+:|\/\/)/i.test(ref)) continue;
-    const abs = ref.startsWith('/') ? ref : path.posix.normalize(path.posix.join(dir, ref));
+    if (ref.startsWith('/') && !ref.startsWith(BASE)) { problems.push(`${path.relative(DIST, file)}: link outside base path ${ref}`); continue; }
+    const abs = ref.startsWith('/') ? '/' + ref.slice(BASE.length) : path.posix.normalize(path.posix.join(dir, ref));
     const target = path.join(DIST, abs);
     const ok = fs.existsSync(target) && (fs.statSync(target).isFile() || fs.existsSync(path.join(target, 'index.html')));
     if (!ok) problems.push(`${path.relative(DIST, file)}: broken internal link ${ref}`);
